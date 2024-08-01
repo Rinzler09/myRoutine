@@ -21,11 +21,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionContinue(_ sender: Any) {
-        
+        let menuVC = storyboard?.instantiateViewController(withIdentifier: "menuVC") as! MenuViewController
+        present(menuVC, animated: true)
     }
+    
+    
     @IBAction func actionAccount(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "cuentaVC") as! CuentaViewController
-        present(vc, animated: true)
+        let cuentaVC = storyboard?.instantiateViewController(withIdentifier: "cuentaVC") as! CuentaViewController
+        present(cuentaVC, animated: true)
     }
     
 }

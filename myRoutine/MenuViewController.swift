@@ -9,6 +9,12 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var btnSalud: UIButton!
+    @IBOutlet weak var btnAccount: UIButton!
+    @IBOutlet weak var btnPredeterminados: UIButton!
+    @IBOutlet weak var btnRutinas: UIButton!
+    @IBOutlet weak var btnPersonalizados: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +22,13 @@ class MenuViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func actionbtnAccount(_ sender: Any) {
+        let perfilVC = storyboard?.instantiateViewController(withIdentifier: "perfilVC") as! PerfilViewController
+        present(perfilVC, animated: true)   
     }
-    */
-
+    
+    @IBAction func actionBtnSalud(_ sender: Any) {
+        let saludVC = storyboard?.instantiateViewController(withIdentifier: "saludVC") as! SaludViewController
+        present(saludVC, animated: true)       }
+    
 }

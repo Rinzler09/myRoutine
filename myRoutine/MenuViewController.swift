@@ -44,4 +44,8 @@ class MenuViewController: UIViewController {
             present(personalizadosVC, animated: true)
     }
     
+    @IBAction func actionBtnRutinas(_ sender: Any) {
+        let rutinasVC = storyboard?.instantiateViewController(withIdentifier: "rutinasVC") as! RutinasViewController
+            present(rutinasVC, animated: true)    }
+    
 }

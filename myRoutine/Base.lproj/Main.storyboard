@@ -352,6 +352,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionBtnRutinas:" destination="Oz0-ih-Hh7" eventType="touchUpInside" id="4hL-0u-fZx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-Kp-NvC">
                                 <rect key="frame" x="24" y="84" width="60" height="35"/>
@@ -939,8 +942,29 @@
                     <view key="view" contentMode="scaleToFill" id="v8C-xh-0jC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sKo-9w-bsb">
+                                <rect key="frame" x="76" y="59" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutinas Realizadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-VS-RoO">
+                                <rect key="frame" x="110" y="246" width="172" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ill-Xa-dTL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="sKo-9w-bsb" secondAttribute="trailing" constant="77" id="EBO-Nq-N2v"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="EeU-VS-RoO" secondAttribute="bottom" constant="546" id="ODF-Ut-YIA"/>
+                            <constraint firstItem="sKo-9w-bsb" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="76" id="P7G-ID-RRU"/>
+                            <constraint firstItem="EeU-VS-RoO" firstAttribute="top" secondItem="sKo-9w-bsb" secondAttribute="bottom" constant="59" id="fj5-OY-cf4"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="EeU-VS-RoO" secondAttribute="trailing" constant="111" id="kgb-34-LyF"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="sKo-9w-bsb" secondAttribute="bottom" constant="631" id="lOz-yl-7hV"/>
+                            <constraint firstItem="sKo-9w-bsb" firstAttribute="top" secondItem="ill-Xa-dTL" secondAttribute="top" id="lki-cy-yMF"/>
+                            <constraint firstItem="EeU-VS-RoO" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="110" id="mgF-uH-YSz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRm-eK-EbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -952,24 +952,78 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b9z-c5-2bs">
+                                <rect key="frame" x="76" y="312" width="240" height="89"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AFh-DX-TA3">
+                                <rect key="frame" x="40" y="426" width="308" height="32"/>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mdn-ig-olK">
+                                <rect key="frame" x="82" y="488" width="229" height="92"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YnX-1z-qDY">
+                                <rect key="frame" x="0.0" y="607" width="393" height="31"/>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-AF-TWa">
+                                <rect key="frame" x="89" y="655" width="215" height="91"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GSx-Qr-Mvl">
+                                <rect key="frame" x="16" y="754" width="361" height="36"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ill-Xa-dTL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YnX-1z-qDY" firstAttribute="trailing" secondItem="ill-Xa-dTL" secondAttribute="trailing" id="42i-tr-kl8"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="YnX-1z-qDY" secondAttribute="bottom" constant="180" id="477-KP-cml"/>
+                            <constraint firstItem="mdn-ig-olK" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="82" id="Az3-wT-QMq"/>
+                            <constraint firstItem="b9z-c5-2bs" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="76" id="B5R-Bl-auO"/>
+                            <constraint firstItem="mdn-ig-olK" firstAttribute="top" secondItem="AFh-DX-TA3" secondAttribute="bottom" constant="30" id="Dcj-xp-wY4"/>
                             <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="sKo-9w-bsb" secondAttribute="trailing" constant="77" id="EBO-Nq-N2v"/>
+                            <constraint firstItem="YnX-1z-qDY" firstAttribute="top" secondItem="mdn-ig-olK" secondAttribute="bottom" constant="27" id="FK8-h7-9PE"/>
+                            <constraint firstItem="AFh-DX-TA3" firstAttribute="top" secondItem="b9z-c5-2bs" secondAttribute="bottom" constant="25" id="HE1-Yl-uNw"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="b9z-c5-2bs" secondAttribute="trailing" constant="77" id="IuU-9N-7Fj"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="mdn-ig-olK" secondAttribute="trailing" constant="82" id="JP0-61-dEy"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="mdn-ig-olK" secondAttribute="bottom" constant="238" id="KxC-Ga-P5w"/>
+                            <constraint firstItem="AFh-DX-TA3" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="40" id="Lm2-CZ-PqY"/>
                             <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="EeU-VS-RoO" secondAttribute="bottom" constant="546" id="ODF-Ut-YIA"/>
                             <constraint firstItem="sKo-9w-bsb" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="76" id="P7G-ID-RRU"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="GSx-Qr-Mvl" secondAttribute="bottom" constant="28" id="RR2-p0-gsj"/>
+                            <constraint firstItem="DjL-AF-TWa" firstAttribute="top" secondItem="YnX-1z-qDY" secondAttribute="bottom" constant="17" id="SN2-Po-jAb"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="GSx-Qr-Mvl" secondAttribute="trailing" constant="16" id="Vwj-Rc-oSM"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="b9z-c5-2bs" secondAttribute="bottom" constant="417" id="bPX-ME-G9w"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="DjL-AF-TWa" secondAttribute="bottom" constant="72" id="d2D-ai-Iad"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="AFh-DX-TA3" secondAttribute="bottom" constant="360" id="efp-5c-pam"/>
                             <constraint firstItem="EeU-VS-RoO" firstAttribute="top" secondItem="sKo-9w-bsb" secondAttribute="bottom" constant="59" id="fj5-OY-cf4"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="AFh-DX-TA3" secondAttribute="trailing" constant="45" id="hfm-a7-keg"/>
+                            <constraint firstItem="GSx-Qr-Mvl" firstAttribute="top" secondItem="DjL-AF-TWa" secondAttribute="bottom" constant="8" symbolic="YES" id="iVF-T8-27S"/>
                             <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="EeU-VS-RoO" secondAttribute="trailing" constant="111" id="kgb-34-LyF"/>
                             <constraint firstItem="ill-Xa-dTL" firstAttribute="bottom" secondItem="sKo-9w-bsb" secondAttribute="bottom" constant="631" id="lOz-yl-7hV"/>
                             <constraint firstItem="sKo-9w-bsb" firstAttribute="top" secondItem="ill-Xa-dTL" secondAttribute="top" id="lki-cy-yMF"/>
                             <constraint firstItem="EeU-VS-RoO" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="110" id="mgF-uH-YSz"/>
+                            <constraint firstItem="ill-Xa-dTL" firstAttribute="trailing" secondItem="DjL-AF-TWa" secondAttribute="trailing" constant="89" id="rHO-kg-TON"/>
+                            <constraint firstItem="DjL-AF-TWa" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="89" id="tBQ-3r-yzr"/>
+                            <constraint firstItem="GSx-Qr-Mvl" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" constant="16" id="tvf-yI-g6z"/>
+                            <constraint firstItem="b9z-c5-2bs" firstAttribute="top" secondItem="EeU-VS-RoO" secondAttribute="bottom" constant="40" id="v0j-sG-aOq"/>
+                            <constraint firstItem="YnX-1z-qDY" firstAttribute="leading" secondItem="ill-Xa-dTL" secondAttribute="leading" id="yo2-DT-nGc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRm-eK-EbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5262" y="-9"/>
+            <point key="canvasLocation" x="5261.8320610687024" y="-9.1549295774647899"/>
         </scene>
     </scenes>
     <resources>
@@ -981,6 +1035,9 @@
         <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="salud1" width="360" height="539"/>
         <image name="shareplay" catalog="system" width="128" height="75"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -9,16 +9,16 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBOutlet weak var btnSalud: UIButton!
+    @IBOutlet weak var btnSAlud: UIButton!
     @IBOutlet weak var btnAccount: UIButton!
     @IBOutlet weak var btnPredeterminados: UIButton!
+    
     @IBOutlet weak var btnRutinas: UIButton!
     @IBOutlet weak var btnPersonalizados: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.lightGray
     }
     
 
@@ -30,5 +30,18 @@ class MenuViewController: UIViewController {
     @IBAction func actionBtnSalud(_ sender: Any) {
         let saludVC = storyboard?.instantiateViewController(withIdentifier: "saludVC") as! SaludViewController
         present(saludVC, animated: true)       }
+    
+    
+    @IBAction func actionBtnPred(_ sender: Any) {
+ 
+        let predeterminadosVC = storyboard?.instantiateViewController(withIdentifier: "predeterminadosVC") as! PredeterminadosViewController
+            present(predeterminadosVC, animated: true)    
+    }
+    
+    @IBAction func actionBtnPerso(_ sender: Any) {
+        
+        let personalizadosVC = storyboard?.instantiateViewController(withIdentifier: "personalizadosVC") as! PersonalizadosViewController
+            present(personalizadosVC, animated: true)
+    }
     
 }

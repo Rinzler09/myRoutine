@@ -137,8 +137,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnAccount" destination="h0a-T8-343" id="a7Z-5U-XTs"/>
-                        <outlet property="btnContinue" destination="XoJ-Lx-BlU" id="30d-up-PRd"/>
                         <outlet property="txtPassword" destination="6aj-J7-z4W" id="EkS-5h-f3v"/>
                         <outlet property="txtUser" destination="1Si-SK-Bkn" id="TCw-n1-siz"/>
                     </connections>
@@ -540,7 +538,6 @@
                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="actionBtnModify:" destination="9ZU-tg-g2v" eventType="touchUpInside" id="xKP-Z0-kuR"/>
                                     <action selector="actionCreate:" destination="yoe-qQ-k1w" eventType="touchUpInside" id="P4t-do-PIs"/>
                                 </connections>
                             </button>
@@ -549,7 +546,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="btnModify" destination="f46-DP-RY0" id="g5K-MH-F7v"/>
                         <outlet property="txtEmail" destination="pBx-eh-7CL" id="8ZL-O7-acy"/>
                         <outlet property="txtPassword" destination="q7u-cJ-bDO" id="55o-Mh-H0q"/>
                         <outlet property="txtPhone" destination="c3p-pW-2M8" id="e3C-2g-S4x"/>
@@ -687,6 +683,9 @@
                                 <rect key="frame" x="299" y="340" width="44" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="actionAbdominales:" destination="S57-4O-WTw" eventType="touchUpInside" id="pPk-u7-tEK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBx-qp-H4f">
                                 <rect key="frame" x="277" y="383" width="89" height="35"/>
@@ -697,6 +696,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="guiaAbdominales:" destination="S57-4O-WTw" eventType="touchUpInside" id="LUE-yZ-deD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Botellas De Agua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaI-LM-BkF">
                                 <rect key="frame" x="34" y="464" width="144" height="23"/>
@@ -708,6 +710,9 @@
                                 <rect key="frame" x="307" y="459" width="44" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="actionBotellas:" destination="S57-4O-WTw" eventType="touchUpInside" id="kC3-aj-OeP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQA-Qs-9XM">
                                 <rect key="frame" x="284" y="509" width="89" height="35"/>
@@ -718,6 +723,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="guiaBotellas:" destination="S57-4O-WTw" eventType="touchUpInside" id="28m-R2-Va3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoga Basica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-AV-mk0">
                                 <rect key="frame" x="34" y="596" width="103" height="23"/>
@@ -729,6 +737,9 @@
                                 <rect key="frame" x="307" y="591" width="44" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="actionYoga:" destination="S57-4O-WTw" eventType="touchUpInside" id="koS-me-89a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-kI-SQl">
                                 <rect key="frame" x="285" y="634" width="89" height="35"/>
@@ -739,6 +750,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="guiaYoga:" destination="S57-4O-WTw" eventType="touchUpInside" id="FXj-HJ-2bj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vGz-g1-1h3"/>
@@ -841,6 +855,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionCreatePerso:" destination="Sbk-Dj-anT" eventType="touchUpInside" id="4ie-to-ihH"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-ke-5pI">
                                 <rect key="frame" x="187" y="361" width="97" height="34"/>
@@ -930,6 +947,14 @@
                             <constraint firstItem="KLt-Me-PIb" firstAttribute="top" secondItem="8jQ-Gm-jNR" secondAttribute="bottom" constant="42" id="ywx-MC-x3H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="absRepes" destination="KLt-Me-PIb" id="n6o-6G-WUu"/>
+                        <outlet property="absSeries" destination="8fr-ke-5pI" id="gSm-42-O62"/>
+                        <outlet property="pechadasRepes" destination="WK1-2O-E87" id="TiZ-Ke-ek6"/>
+                        <outlet property="pechadasSeries" destination="KiM-ui-5nq" id="hPG-Oe-3lK"/>
+                        <outlet property="saltosRepes" destination="3La-UI-MIa" id="foY-9D-xGP"/>
+                        <outlet property="saltosSeries" destination="IJL-oz-T0P" id="T41-UI-mlc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGl-4M-Tn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

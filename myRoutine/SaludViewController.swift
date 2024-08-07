@@ -17,13 +17,27 @@ class SaludViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.lightGray
+        txtIMC.isEnabled = false
         // Do any additional setup after loading the view.
     }
     
     @IBAction func actionBtnCalcular(_ sender: Any) {
+        guard let alturaText = txtAltura.text, let pesoText = txtPeso.text else {
+            return
+        }
         
+     
+        guard let altura = Double(alturaText), let peso = Double(pesoText) else {
+            return
+        }
+        
+  
+        let imc = peso / (altura * altura)
+        
+
+        txtIMC.text = String(format: "%.2f", imc)
     }
+}
     
 
 
-}
